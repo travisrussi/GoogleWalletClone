@@ -29,6 +29,7 @@
         </div>
 
       </div>
+
       <ion-list>
         <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.full-page-2">
           Full Page #2
@@ -39,10 +40,13 @@
         <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.full-page-8">
           Full Page #8
         </ion-item>
-        <ion-item ui-sref-active="active" nav-clear menu-close ng-click="showPopup('2')">
+        <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.input-7">
+          Input #7
+        </ion-item>
+        <ion-item nav-clear menu-close ng-click="showPopup('2')">
           Popup #2
         </ion-item>
-        <ion-item ui-sref-active="active" nav-clear menu-close ng-click="showLoading()">
+        <ion-item nav-clear menu-close ng-click="showLoading()">
           Waiting #1
         </ion-item>
       </ion-list>
