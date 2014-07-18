@@ -47,6 +47,16 @@ angular.module('Gwallet')
       }
     })
 
+    .state('app.input-8', {
+      url: '/input-8',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/pages/input-8.html',
+          controller: 'UsersCtrl'
+        }
+      }
+    })
+
     .state('app.search', {
       url: '/search',
       views: {

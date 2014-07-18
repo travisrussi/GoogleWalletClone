@@ -1,0 +1,22 @@
+<div class="bar bar-gray bar-header item-input-inset">
+  <label class="item-input-wrapper">
+    <input type="search" ng-model="search" placeholder="Enter name or email address">
+  </label>
+  <button class="button button-icon icon ion-close"></button>
+</div>
+
+<ion-view title="Send money">
+
+  <ion-content padding="false">
+
+    <div class="list list-users alignleft">
+      <a class="item item-avatar" href="#" ng-repeat="user in users | filter: search">
+        <img ng-src="{{user.avatar}}" class="img-circle">
+        <h2>{{user.name}}</h2>
+        <p>{{user.email}}</p>
+      </a>
+    </div>
+
+  </ion-content>
+
+</ion-view>
