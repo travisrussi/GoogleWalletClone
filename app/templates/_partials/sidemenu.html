@@ -8,24 +8,41 @@
   </ion-pane>
 
   <ion-side-menu side="left">
-    <header class="bar bar-header bar-stable">
-      <h1 class="title">Pages</h1>
-    </header>
-    <ion-content class="has-header">
+    <ion-content>
+      <div class="sidebar-header">
+
+        <div class="row">
+          <div class="col">
+            <img src="images/icon-user-default.png" alt="" class="img-circle img-shadow" width="50" height="50">
+          </div>
+          <div class="col alignright">
+            <ul class="list-inline list-unstyled">
+              <li><a class="button button-inverted button-small button-icon icon ion-locked"></a></li>
+              <li><a class="button button-inverted button-small button-icon icon ion-gear-b"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-90">travis@russigroup.com</div>
+          <div class="col-10"><i class="icon ion-chevron-down"></i></div>
+        </div>
+
+      </div>
       <ion-list>
-        <ion-item nav-clear menu-close href="#/app/full-page-2">
+        <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.full-page-2">
           Full Page #2
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/full-page-4">
+        <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.full-page-4">
           Full Page #4
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/full-page-8">
+        <ion-item ui-sref-active="active" nav-clear menu-close ui-sref="app.full-page-8">
           Full Page #8
         </ion-item>
-        <ion-item nav-clear menu-close ng-click="showPopup('2')">
+        <ion-item ui-sref-active="active" nav-clear menu-close ng-click="showPopup('2')">
           Popup #2
         </ion-item>
-        <ion-item nav-clear menu-close ng-click="showLoading()">
+        <ion-item ui-sref-active="active" nav-clear menu-close ng-click="showLoading()">
           Waiting #1
         </ion-item>
       </ion-list>

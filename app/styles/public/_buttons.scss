@@ -13,3 +13,12 @@
     color: #fff;
   }
 }
+
+.button-icon.button-small .icon:before,
+.button-icon.button-small.icon:before {
+  font-size: 18px;
+}
+
+.button-inverted {
+  color: #fff;
+}

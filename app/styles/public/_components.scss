@@ -79,3 +79,16 @@
     border-top: 1px solid #ccc;
   }
 }
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none inside nonde;
+  }
+}
+
+.list-inline li {
+  display: inline;
+}
