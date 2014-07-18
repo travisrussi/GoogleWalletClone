@@ -1,0 +1,21 @@
+.pane {
+  background-color: $body-bg;
+  text-align: center;
+
+  p {
+    color: $body-color;
+  }
+
+  &.pane-featured {
+    background-color: $brand-blue;
+    color: #fff;
+  }
+}
+
+.slider {
+  padding-bottom: 25px;
+}
+
+.slider-pager {
+  bottom: 5px;
+}

@@ -1,0 +1,15 @@
+.button {
+  @include border-radius($border-radius);
+}
+
+.button-gray {
+  border-color: darken($brand-gray, 5%);
+  background-color: $brand-gray;
+  color: #fff;
+
+  &:hover,
+  &:active {
+    background-color: darken($brand-gray, 5%);
+    color: #fff;
+  }
+}
