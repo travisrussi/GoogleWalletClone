@@ -34,9 +34,9 @@
 }
 
 .table {
-  width: 100%;
-  max-width: 100%;
   background-color: transparent;
+  max-width: 100%;
+  width: 100%;
 
   tr td {
     padding: 15px 0;
@@ -58,5 +58,24 @@
     tr td {
       font-size: 22px;
     }
+  }
+}
+
+.popup {
+  @include border-radius($border-radius);
+  @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
+
+  .popup-head {
+    border-bottom-color: #ccc;
+    padding: 15px 10px;
+    text-align: left;
+
+    .popup-title {
+      font-size: 20px;
+    }
+  }
+
+  .popup-buttons {
+    border-top: 1px solid #ccc;
   }
 }
