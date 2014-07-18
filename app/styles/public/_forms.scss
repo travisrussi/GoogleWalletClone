@@ -1,3 +1,18 @@
 .bar-gray .item-input-wrapper {
   background-color: #fff;
 }
+
+.item-input,
+textarea {
+  border-color: transparent;
+  background-color: transparent;
+
+  &.text-huge > input {
+    font-size: 36px;
+    height: 48px;
+  }
+
+  &.text-big > textarea {
+    font-size: 26px;
+  }
+}
