@@ -3,9 +3,11 @@
 @import 'compass';
 
 @import 'config/variables',
+        'config/mixins',
         'public/typography',
         'public/buttons',
-        'public/components';
+        'public/components',
+        'public/layout';
 
 .ionic-logo {
   display: block;

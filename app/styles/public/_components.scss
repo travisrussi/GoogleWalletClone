@@ -5,9 +5,14 @@
   p {
     color: $body-color;
   }
+}
 
-  &.pane-featured {
-    background-color: $brand-blue;
+.pane-featured {
+  background-color: $brand-blue;
+  padding: 40px 0;
+
+  p,
+  h1 {
     color: #fff;
   }
 }
@@ -18,4 +23,40 @@
 
 .slider-pager {
   bottom: 5px;
+}
+
+.img-circle {
+  @include border-radius(50%);
+}
+
+.img-shadow {
+  @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+
+  tr td {
+    padding: 15px 0;
+
+    &:first-child {
+      text-align: left;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  tfoot {
+    border-top: 1px solid $brand-gray;
+  }
+
+  &.table-big {
+    tr td {
+      font-size: 22px;
+    }
+  }
 }
