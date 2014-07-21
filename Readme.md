@@ -17,6 +17,13 @@ npm install -g grunt-cli bower
 npm install -g cordova ionic
 ```
 
+- Yeoman and the ionic generator (recommended for scaffolding)
+
+```shell
+npm install -g yo generator-ionic
+```
+
+
 # Installing dependencies
 
 ```shell
