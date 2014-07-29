@@ -1,3 +1,15 @@
 .card {
   text-align: left;
+
+  .item.extra-padding {
+    padding-left: 105px;
+
+    i {
+      width: 80px;
+
+      &:before {
+        font-size: 80px;
+      }
+    }
+  }
 }
