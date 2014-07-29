@@ -22,6 +22,7 @@ h3 { font-size: 20px; }
 
 .text-color-blue { color: $brand-blue; }
 .text-color-orange { color: $brand-orange; }
+.text-mute { color: lighten($brand-gray, 20) !important; }
 .text-bold { font-weight: 600; }
 .text-big { font-size: 24px; }
 .text-huge { font-size: 36px; }
