@@ -17,6 +17,20 @@
   }
 }
 
+.pane-blur {
+  background: #885f65 url('../images/gaussian-blur.jpg') no-repeat;
+  padding: 20px 0 30px 0;
+
+  .item {
+    background: transparent;
+    border: 0;
+
+    &.item-input {
+      background-color: #fff;
+    }
+  }
+}
+
 .slider {
   padding-bottom: 25px;
 }
@@ -32,6 +46,56 @@
 
 .img-shadow {
   @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
+}
+
+.item-big {
+  &.item-avatar {
+    padding-left: 120px;
+    padding-top: 30px;
+  }
+
+  > img:first-child {
+    max-height: 80px;
+    max-width: 80px;
+  }
+
+  .item-input {
+    padding: 10px 0 11px 8px;
+    input {
+      font-size: 22px;
+      line-height: 23px;
+    }
+  }
+}
+
+.item-thumbnail-large {
+  min-height: 160px;
+
+  &.item-thumbnail-left { padding-left: 225px; }
+  &.item-thumbnail-right { padding-right: 225px; }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  > img:first-child {
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
+
+.item-icon-top-right {
+  padding-top: 30px;
+
+  &.item-thumbnail-right > img:first-child {
+    top: 30px;
+  }
+
+  i {
+    right: 10px;
+    position: absolute;
+    top: 10px;
+  }
 }
 
 .table {
