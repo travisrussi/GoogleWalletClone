@@ -62,3 +62,8 @@ npm install && bower install
 ## Styles
 
 Styles are written in SCSS (SASS), but compile to pure CSS via a grunt task.
+
+### Related documents
+
+* [Google Wallet iOS in Ionic Framework](https://docs.google.com/document/d/1U2o7KXGZPL8EFmm5Oo9WsO1luaxmMdPqHWSLFW3iILo/edit#heading=h.dbdt7239ez0v)
+* [Screenshots](https://drive.google.com/a/russigroup.com/folderview?id=0B1lB-i43vZI9TDNDanMyc1NJOFU&usp=sharing)
