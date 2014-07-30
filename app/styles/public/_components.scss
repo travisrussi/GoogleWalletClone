@@ -198,3 +198,31 @@
   color: #aaa;
   font-weight: normal;
 }
+
+.item-radio-left {
+  padding-left: 60px;
+  padding-right: 0;
+
+  .radio-icon:before {
+    content: '\f170';
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .radio-icon {
+    left: 0;
+    visibility: inherit;
+  }
+
+  input:checked ~ .radio-icon:before {
+    content: '\f16f';
+  }
+}
