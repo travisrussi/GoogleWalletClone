@@ -38,6 +38,15 @@ angular.module('Gwallet')
       }
     })
 
+    .state('app.input-2', {
+      url: '/input-2',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/pages/input-2.html'
+        }
+      }
+    })
+
     .state('app.input-7', {
       url: '/input-7',
       views: {
