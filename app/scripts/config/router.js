@@ -85,6 +85,15 @@ angular.module('Gwallet')
       }
     })
 
+    .state('app.cards-6', {
+      url: '/cards-6',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/cards/cards-6.html'
+        }
+      }
+    })
+
     .state('app.cards-7', {
       url: '/cards-7',
       views: {
