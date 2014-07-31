@@ -17,6 +17,7 @@
 
 .table {
   background-color: transparent;
+  margin-bottom: rem-calc(20);
   max-width: 100%;
   width: 100%;
 
@@ -33,7 +34,7 @@
   }
 
   tfoot {
-    border-top: 1px solid $brand-gray;
+    border-top: 1px solid $border-color;
   }
 
   &.table-big {

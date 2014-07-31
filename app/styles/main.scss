@@ -2,9 +2,11 @@
 
 @import 'compass';
 
-@import 'config/variables',
-        'config/mixins',
-        'public/typography',
+@import 'config/functions',
+        'config/variables',
+        'config/mixins';
+
+@import 'public/typography',
         'public/buttons',
         'public/components',
         'public/layout',
