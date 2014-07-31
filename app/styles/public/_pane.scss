@@ -1,0 +1,41 @@
+.pane {
+  background-color: $body-bg;
+  text-align: center;
+
+  p {
+    color: $body-color;
+  }
+}
+
+.pane-featured {
+  background-color: $brand-blue;
+  padding: 40px 0;
+
+  p,
+  h1 {
+    color: #fff;
+  }
+}
+
+.pane-featured-transparent {
+  background-color: transparent;
+
+  p,
+  h1 {
+    color: $brand-gray;
+  }
+}
+
+.pane-blur {
+  background: #885f65 url('../images/gaussian-blur.jpg') no-repeat;
+  padding: 20px 0 30px 0;
+
+  .item {
+    background: transparent;
+    border: 0;
+
+    &.item-input {
+      background-color: #fff;
+    }
+  }
+}
