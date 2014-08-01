@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'trv-icons';
+  src: url('../fonts/trv-icons.eot?4126091');
+  src: url('../fonts/trv-icons.eot?4126091#iefix') format('embedded-opentype'),
+       url('../fonts/trv-icons.woff?4126091') format('woff'),
+       url('../fonts/trv-icons.ttf?4126091') format('truetype'),
+       url('../fonts/trv-icons.svg?4126091#trv-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'trv-icons';
+    src: url('../font/trv-icons.svg?4126091#trv-icons') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "trv-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-bank:before { content: '\e800'; }
+.icon-calculator-backspace-sign:before { content: '\e801'; }
+.icon-calculator-divide-sign:before { content: '\e802'; }

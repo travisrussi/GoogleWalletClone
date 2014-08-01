@@ -7,7 +7,7 @@
     <button class="button button-positive">Next</button>
   </ion-nav-buttons>
 
-  <ion-content padding="false">
+  <ion-content padding="false" class="on-white">
 
     <div class="pane-featured">
       <img src="images/icon-user-default.png" alt="" class="img-circle img-shadow" width="150" height="150">
@@ -35,15 +35,44 @@
       <div class="row">
         <div class="col-80">
           <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(1)">1</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(2)">2</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(3)">3</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(1)">1</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(2)">2</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(3)">3</a></div>
           </div>
         </div>
         <div class="col-20">
           <div class="row">
-            <div class="key-gray col">
-              <a class="button button-clear button-dark button-full">/</a></div>
+            <div class="key-gray col"><a class="button button-full button-icon icon icon-calculator-divide-sign"></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-80">
+          <div class="row">
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(4)">4</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(5)">5</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(6)">6</a></div>
+          </div>
+        </div>
+        <div class="col-20">
+          <div class="row">
+            <div class="key-gray col"><a class="button button-full button-icon icon ion-android-close"></a></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-80">
+          <div class="row">
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(7)">7</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(8)">8</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateInput(9)">9</a></div>
+          </div>
+        </div>
+        <div class="col-20">
+          <div class="row">
+            <div class="key-gray col"><a class="button button-full button-icon button-clear button-dark icon ion-minus"></a></div>
             </div>
           </div>
       </div>
@@ -51,49 +80,16 @@
       <div class="row">
         <div class="col-80">
           <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(4)">4</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(5)">5</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(6)">6</a></div>
+            <div class="key col-33"><a class="button button-full button-clear button-dark" ng-click="updateInput('.')">.</a></div>
+            <div class="key col-33"><a class="button button-full button-clear button-dark" ng-click="updateInput(0)">0</a></div>
+            <div class="key col-33"><a class="button button-full button-icon icon-calculator-backspace-sign" ng-click="performOperation('undo')"></a></div>
           </div>
         </div>
         <div class="col-20">
           <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-icon icon ion-android-close"></a></div>
-            </div>
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="col-80">
-          <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(7)">7</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(8)">8</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(9)">9</a></div>
+            <div class="key-gray col"><a class="button button-full button-clear button-icon button-clear button-dark icon ion-plus"></a></div>
           </div>
         </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-icon button-clear button-dark icon ion-minus"></a></div>
-            </div>
-          </div>
-      </div>
-
-      <div class="row">
-        <div class="col-80">
-          <div class="row">
-            <div class="key col-33"><a class="button button-full button-clear button-dark">.</a></div>
-            <div class="key col-33"><a class="button button-full button-clear button-dark" ng-click="updateTotal(0)">0</a></div>
-            <div class="key col-33"><a class="button button-full button-icon ion-ios7-undo" ng-click="performOperation('undo')"></a></div>
-          </div>
-        </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-clear button-icon button-clear button-dark icon ion-plus"></a></div>
-            </div>
-          </div>
       </div>
 
     </div>

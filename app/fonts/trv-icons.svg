@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="trv-icons" horiz-adv-x="1000" >
+<font-face font-family="trv-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="bank" unicode="&#xe800;" d="m0-79q0 15 11 25t28 11h994q16 0 27-11t11-25v-71h-1071v71z m0 643v72l536 214 535-214v-72h-71q0-14-11-25t-28-10h-851q-16 0-27 10t-12 25h-71z m71-571v36q0 14 12 25t27 10h33v429h143v-429h71v429h143v-429h71v429h143v-429h72v429h143v-429h32q16 0 28-10t11-25v-36h-929z" horiz-adv-x="1142.9" />
+<glyph glyph-name="calculator-backspace-sign" unicode="&#xe801;" d="m1394 850h-935l-230-261-229-261 229-261 225-257 17 1h923c92 0 167 74 167 166v706c0 92-75 167-167 167z m-228-727l-84-84-206 206-217-216-87 88 216 216-206 206 84 85 206-207 215 215 87-88-214-215 206-206z" horiz-adv-x="1542" />
+<glyph glyph-name="calculator-divide-sign" unicode="&#xe802;" d="m1080 295h-1080v102h1080v-102z m-451 555h-173v-172h173v172z m0-835h-173v-172h173v172z" horiz-adv-x="1042" />
+</font>
+</defs>
+</svg>
