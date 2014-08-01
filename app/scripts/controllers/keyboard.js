@@ -3,8 +3,10 @@ angular.module('Gwallet')
 
   .controller('KeyboardCtrl', ['$scope', function($scope) {
     $scope.total = 0.00;
+    $scope.pin = '';
 
     var decimalPlaces, updateInput, performOperation;
+    var updatePin, removeDigits;
 
     decimalPlaces = function(number) {
       return ((+number).toFixed(2)).replace(/^-?\d*\.?|0+$/g, '').length;
@@ -54,6 +56,25 @@ angular.module('Gwallet')
       }
     };
 
+    updatePin = function(input) {
+      var pin = String($scope.pin);
+      if(pin.length < 4) {
+        $scope.pin = pin + String(input);
+      }
+
+      console.log($scope.pin.length);
+    };
+
+    removeDigits = function(all) {
+      if(all) {
+        $scope.pin = '';
+      } else {
+        $scope.pin = String($scope.pin).substring(0,String($scope.pin).length - 1);
+      }
+    };
+
     $scope.updateInput = updateInput;
     $scope.performOperation = performOperation;
+    $scope.updatePin = updatePin;
+    $scope.removeDigits = removeDigits;
   }]);

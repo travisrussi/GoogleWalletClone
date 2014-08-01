@@ -42,7 +42,8 @@ angular.module('Gwallet')
       url: '/input-1',
       views: {
         'menuContent': {
-          templateUrl: 'templates/pages/input-1.html'
+          templateUrl: 'templates/pages/input-1.html',
+          controller: 'KeyboardCtrl'
         }
       }
     })

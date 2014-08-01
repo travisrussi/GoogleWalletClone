@@ -3,77 +3,62 @@
     <button class="button button-clear button-icon icon ion-ios7-help-outline"></button>
   </ion-nav-buttons>
 
-  <ion-content padding="false">
+  <ion-content padding="false" class="on-white">
 
     <div class="pane-featured pane-featured-transparent">
       <img src="images/ionic.png" width="150" height="150">
+      <div id="pin">
+        <ul class="list-unstyled list-inline">
+          <li><i class="icon" ng-class="{'ion-record': pin.length > 0, 'ion-ios7-circle-outline': pin.length == 0}"></i></li>
+          <li><i class="icon" ng-class="{'ion-record': pin.length > 1, 'ion-ios7-circle-outline': pin.length < 2}"></i></li>
+          <li><i class="icon" ng-class="{'ion-record': pin.length > 2, 'ion-ios7-circle-outline': pin.length < 3}"></i></li>
+          <li><i class="icon" ng-class="{'ion-record': pin.length > 3, 'ion-ios7-circle-outline': pin.length < 4}"></i></li>
+        </ul>
+      </div>
       <h1>Enter new Wallet PIN</h1>
       <p class="text-mute">travis@russigroup.com</p>
     </div>
 
-    <div id="keyboard keyboard-with-letters">
+    <div id="keyboard" class="keyboard-with-letters">
 
       <div class="row">
-        <div class="col-80">
+        <div class="col">
           <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(1)">1</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(2)">2</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(3)">3</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(1)">1</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(2)">2<small>ABC</small></a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(3)">3<small>DEF</small></a></div>
           </div>
         </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-clear button-dark button-full">/</a></div>
-            </div>
-          </div>
       </div>
 
       <div class="row">
-        <div class="col-80">
+        <div class="col">
           <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(4)">4</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(5)">5</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(6)">6</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(4)">4</a><small>GHI</small></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(5)">5<small>JKL</small></a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(6)">6<small>MNO</small></a></div>
           </div>
         </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-icon icon ion-android-close"></a></div>
-            </div>
-          </div>
       </div>
 
       <div class="row">
-        <div class="col-80">
+        <div class="col">
           <div class="row">
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(7)">7</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(8)">8</a></div>
-            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updateTotal(9)">9</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(7)">7<small>PQRS</small></a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(8)">8<small>TUV</small></a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(9)">9<small>WXYZ</small></a></div>
           </div>
         </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-icon button-clear button-dark icon ion-minus"></a></div>
-            </div>
-          </div>
       </div>
 
       <div class="row">
-        <div class="col-80">
+        <div class="col">
           <div class="row">
-            <div class="key col-33 col-offset-33"><a class="button button-full button-clear button-dark" ng-click="updateTotal(0)">0</a></div>
-            <div class="key col-33"><a class="button button-full button-icon ion-ios7-undo" ng-click="performOperation('undo')"></a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="removeDigits(true)">Cancel</a></div>
+            <div class="key col-33"><a class="button button-clear button-dark button-full" ng-click="updatePin(0)">0</a></div>
+            <div class="key col-33"><a class="button button-full button-icon icon-calculator-backspace-sign" ng-click="removeDigits()"></a></div>
           </div>
         </div>
-        <div class="col-20">
-          <div class="row">
-            <div class="key-gray col">
-              <a class="button button-full button-clear button-icon button-clear button-dark icon ion-plus"></a></div>
-            </div>
-          </div>
       </div>
 
     </div>
