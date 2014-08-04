@@ -13,3 +13,9 @@
 .pull-left { float: left; }
 
 .on-white { background-color: #fff; }
+
+.img-responsive { @extend %img-responsive; }
+
+.col-extra-padding {
+  padding: 10px;
+}
