@@ -36,3 +36,17 @@
 .bar-gray {
   background-color: $brand-gray-lighter;
 }
+
+.bar-with-button {
+  height: 70px;
+
+  button {
+    font-size: 16px !important;
+    line-height: 42px !important;
+    min-height: 47px !important;
+  }
+}
+
+.bar-transparent {
+  background-color: transparent;
+}
