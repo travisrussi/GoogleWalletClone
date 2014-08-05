@@ -158,23 +158,23 @@ angular.module('Gwallet')
       }
     })
 
-      .state('app.popup-2', {
-          url: '/popup-2',
-          views: {
-              'menuContent': {
-                  templateUrl: 'templates/modals/popup-2.html'
-              }
-          }
-      })
+    .state('app.popup-2', {
+      url: '/popup-2',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/modals/popup-2.html'
+        }
+      }
+    })
 
-      .state('app.waiting-1', {
-          url: '/waiting-1',
-          views: {
-              'menuContent': {
-                  templateUrl: 'templates/modals/waiting-1.html'
-              }
-          }
-      });
+    .state('app.waiting-1', {
+      url: '/waiting-1',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/modals/waiting-1.html'
+        }
+      }
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/full-page-2');
 }]);
