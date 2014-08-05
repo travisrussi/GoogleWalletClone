@@ -21,20 +21,20 @@
 
 .item-big {
   &.item-avatar {
-    padding-left: 120px;
-    padding-top: 30px;
+    padding-left: 90px;
+    padding-top: 25px;
   }
 
   > img:first-child {
-    max-height: 80px;
-    max-width: 80px;
+    max-height: 60px;
+    max-width: 60px;
   }
 
   .item-input {
-    padding: 10px 0 11px 8px;
+    padding: 6px 0 5px 4px;
     input {
-      font-size: 22px;
-      line-height: 23px;
+      font-size: 14px;
+      line-height: 15px;
     }
   }
 }
@@ -42,30 +42,28 @@
 .item-thumbnail-large {
   min-height: 160px;
 
-  &.item-thumbnail-left { padding-left: 225px; }
-  &.item-thumbnail-right { padding-right: 225px; }
+  &.item-thumbnail-left { padding-left: 145px; }
+  &.item-thumbnail-right { padding-right: 145px; }
 
   h1 {
     margin-top: 0;
   }
 
   > img:first-child {
-    max-height: 200px;
-    max-width: 200px;
+    margin-top: 30px;
+    max-height: 120px;
+    max-width: 120px;
   }
 }
 
 .item-icon-top-right {
-  padding-top: 30px;
-
-  &.item-thumbnail-right > img:first-child {
-    top: 30px;
+  a {
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   i {
     color: $brand-gray;
-    right: 10px;
-    position: absolute;
-    top: 10px;
   }
 }

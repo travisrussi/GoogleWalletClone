@@ -19,9 +19,11 @@ $anchor-font-color: #4a87ee;
 $body-font-family: 'Open Sans', sans-serif;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(28) !default;
-$h2-font-size: rem-calc(22) !default;
-$h3-font-size: rem-calc(18) !default;
-$h4-font-size: rem-calc(16) !default;
-$h5-font-size: rem-calc(14) !default;
-$h6-font-size: $rem-base !default;
+$h1-font-size: 20px !default;
+$h2-font-size: 18px !default;
+$h3-font-size: 16px !default;
+$h4-font-size: 14px !default;
+$h5-font-size: 13px !default;
+$h6-font-size: 12px !default;
+
+$body-font-size: 12px !default;

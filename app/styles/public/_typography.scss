@@ -1,5 +1,5 @@
 html,
-body { font-size: $base-font-size; }
+body { font-size: $body-font-size; }
 
 body,
 p,
@@ -17,6 +17,12 @@ h5,
 h6 {
   font-family: $body-font-family;
   font-weight: 300;
+}
+
+p,
+div,
+a {
+  font-size: $body-font-size;
 }
 
 a {
@@ -43,9 +49,9 @@ h6 { font-size: $h6-font-size }
 .text-color-green { color: $brand-green; }
 .text-mute { color: $body-color-light !important; }
 .text-bold { font-weight: 600; }
-.text-lead { font-size: rem-calc(16); line-height: 140%; }
+.text-lead { font-size: 16px; line-height: 140%; }
 .text-big { font-size: $h2-font-size; }
-.text-huge { font-size: rem-calc(36); line-height: 140%; }
+.text-huge { font-size: 36px; line-height: 100%; }
 
 .aligncenter { text-align: center; }
 .alignleft { text-align: left; }
